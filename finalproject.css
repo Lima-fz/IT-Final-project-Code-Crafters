@@ -1,0 +1,104 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #a32607;
+  background-color: #343a40;
+}
+
+.hero {
+  background: url('your-background-image.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000000;
+  filter: blur(0.5px);
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.blur-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.services-preview .card {
+  background-color: #4e0606;
+  color: #030000;
+}
+
+footer {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #ff5c5c;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+  
+  /* About Section */
+  .card {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-body h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-body p {
+    font-size: 1rem;
+  }
+  
+  .card-body .text-muted {
+    font-size: 0.875rem;
+  }
+  
+  footer {
+    background-color: #343a40;
+    color: rgb(88, 9, 9);
+    padding: 10px 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .card-body p {
+      font-size: 0.9rem;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  }
